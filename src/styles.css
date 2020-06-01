@@ -20,6 +20,16 @@ button:hover {
     cursor: pointer;
 }
 
+button:disabled {
+    cursor: default;
+    background: grey;
+    pointer-events: none;
+}
+
+button:disabled {
+    background: grey;
+}
+
 .button {
     padding: 0.7em;
     border-radius: 0.5em;

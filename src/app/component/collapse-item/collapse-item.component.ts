@@ -14,6 +14,7 @@ export class CollapseItemComponent implements OnInit {
 
   isDisabled: boolean;
   itemsChecked: any[] = [];
+  buttonDisabled: boolean = true;
 
   constructor(private renderer: Renderer2) { }
 
@@ -39,15 +40,17 @@ export class CollapseItemComponent implements OnInit {
 
   checkItem(e: any) {
     const { target: checkbox} = e;
+    const itemFound = this.items.find((item: any) => item.id === +checkbox.value);
     if (checkbox.checked) {
-      const itemFound = this.items.find((item: any) => item.id === +checkbox.value);
       this.itemsChecked.push(itemFound);
     } else {
-      
+      const index = this.itemsChecked.indexOf(itemFound);
+      this.itemsChecked.splice(index, 1);
     }
+    this.itemsChecked.length > 0 ? this.buttonDisabled = false : this.buttonDisabled = true;
   }
 
   addItems() {
-    
+    console.log(this.itemsChecked);
   }
 }
