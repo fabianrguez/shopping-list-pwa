@@ -1,1 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --ligth-cyan: #C7EDE4;
+    --aero-blue: #D5FFF3;
+    --lilac-luster: #AF9AB2;
+    --dark-magenta: #820B8A;
+    --old-mauve: #672A4E;
+}
+
+html, body { 
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    font-family: 'Merienda One', "Helvetica Neue", sans-serif;
+}
+body { 
+    margin: 0 auto;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.button {
+    padding: 0.7em;
+    border-radius: 0.5em;
+    margin: 1em;
+    border: none;
+    font-family: 'Merienda One', "Helvetica Neue", sans-serif;
+}
+
+button:focus {
+    border: none;
+}
+
+.button.primary:hover {
+    background-color: darkturquoise;
+}
+
+.primary {
+    background: turquoise;
+    color: white;
+}
+
+.secondary {
+    background: var(--aero-blue);
+    color: white;
+}
+
+

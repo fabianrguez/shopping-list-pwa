@@ -1,0 +1,16 @@
+<button class="collapsible" (click)="toggle()" #toggleElement > {{title}} </button>
+<div class="content">
+    <div class="items">
+        <div class="item" *ngFor="let item of items">
+            <label for="{{item.name}}-checkbox">
+                <input type="checkbox" value="{{item.id}}" name="{{item.name}}-checkbox" id="{{item.name}}-checkbox" (change)="checkItem($event)">
+                <div>
+                    <span class="item-name">{{item.name}}</span>
+                </div>
+            </label>
+        </div>
+    </div>
+    <div class="add-button">
+        <button class="button primary">Añadir +</button>
+    </div>
+</div>

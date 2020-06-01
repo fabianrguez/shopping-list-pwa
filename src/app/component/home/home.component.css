@@ -1,0 +1,12 @@
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.item {
+    display: flex;
+    border: 1px solid deepskyblue;
+    padding: 4em;
+    border-radius: 3em;
+}
