@@ -1,0 +1,7 @@
+.shop-list {
+    flex: 1;
+    justify-content: flex-end;
+    margin-bottom: 0;
+    background-color: var(--color1);
+
+}

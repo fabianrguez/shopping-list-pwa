@@ -10,6 +10,7 @@ import { ProductListComponent } from './component/product-list/product-list.comp
 import { MenuItemComponent } from './component/menu-item/menu-item.component';
 import { MenuComponent } from './component/menu/menu.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ShopListComponent } from './component/shop-list/shop-list.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     CollapseItemComponent,
     ProductListComponent,
     MenuItemComponent,
-    MenuComponent
+    MenuComponent,
+    ShopListComponent
   ],
   imports: [
     BrowserModule,
